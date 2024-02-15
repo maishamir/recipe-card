@@ -1,0 +1,157 @@
+html {
+    background-color: #F3E5D7;
+}
+
+body {
+    font-size: 1em;
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+    color: #5F564D;
+    line-height: 150%;
+}
+
+.card {
+    margin: 0 auto;
+    width: 50vw;
+    height: 90%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 24px;
+    /* box-sizing: border-box; */
+}
+
+.omelette {
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+.heading {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.75em;
+    color: #854632;
+    margin-left: 0.5em;
+}
+
+.main {
+    font-size: 2.5em;
+    color: #312E2C;
+    margin: 0.75em 0 0.5em 0;
+}
+
+.desc {
+    margin: 1em 0 2em 0;
+}
+
+.nutrDesc {
+    margin: 0.5em 0 0.75em 0.75em;
+}
+
+.prepBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers the content */
+    width: 100%;
+    background: #FFF7FB;
+    height: 180px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 15px;
+
+}
+
+.prepMain {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #854632;
+}
+
+.prepTime {
+    margin-top: 25px;
+    margin-left: 0.5em;
+}
+
+.step {
+    font-weight: bold;
+}
+
+ul {
+    list-style-position: outside;
+    padding-right: 20px;
+}
+
+li {
+    margin-bottom: 0.75em;
+    
+}
+
+
+li {
+    padding-left: 25px;
+}
+
+li::marker {
+    vertical-align: middle;
+}
+
+
+ul li::marker {
+    color: #854632;
+    font-size: 0.85em;
+}
+
+ol li::marker {
+    color: #854632;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.header, .data {
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+
+.header {
+    color: #5f574e;
+    padding-left: 2.5em;
+}
+
+.data {
+    color: #854632;
+    font-weight: bold;
+}
+
+hr {
+    height: 0.5px;
+    border: none;
+    border-top: 1px solid #E3DDD7;
+    margin-top: 2em;
+}
+
+.gridContainer .header:nth-child(-n+6) {
+  border-bottom: 1px solid #E3DDD7;
+}
+
+.gridContainer .data:nth-child(-n+6) {
+  border-bottom: 1px solid #E3DDD7;
+}
+
+
+.gridContainer .header:nth-child(-n+6):last-child {
+  border-bottom: none; /* Remove border from the last header cell */
+}
+
+
+.gridContainer .header:nth-child(-n+6):not(:last-child) {
+  padding-bottom: 0; /* Remove padding bottom from header cells except the last one */
+}
